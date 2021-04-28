@@ -1,0 +1,48 @@
+.desc {
+  min-height: 1325px;
+  padding-top: 10px;
+  @include bg;
+  background-image: url('/src/img/bgs/desc-bg.png');
+}
+
+.desc__title {
+  @include max-width(571px);
+  margin-top: 69px;
+  line-height: 70px;
+  font-family: Berlingske;
+  font-weight: 800;
+  font-size: 50px;
+  color: white;
+  font-style: italic;
+  margin-bottom: 25px;
+
+  span {
+    text-transform: uppercase;
+    color: #f6db4a;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+.desc__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.desc__text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.desc__text {
+  font-size: 24px;
+  background-color: #ffffff;
+  margin-bottom: 0;
+  min-height: 42px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 30px;
+}

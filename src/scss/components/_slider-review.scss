@@ -1,0 +1,147 @@
+.slider-review {
+  position: relative;
+  width: 500px;
+
+  &::before {
+    position: absolute;
+    bottom: -60px;
+    left: -300px;
+    content: url('/src/img/class.png');
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+
+  &__review-box {
+    width: 413px;
+    height: 664px;
+    padding-top: 61px;
+    padding-right: 90px;
+    padding-left: 89px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('/src/img/iphone.png');
+    font-size: 17px;
+    line-height: 1.18;
+
+    @include bg;
+
+    @media (max-width: 575px) {
+      width: 290px;
+      height: 591px;
+      padding-right: 50px;
+      padding-left: 50px;
+      font-size: 15px;
+    }
+  }
+
+  &__stars-list {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  &__date {
+    margin-bottom: 20px;
+    color: #706f6f;
+  }
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: space-between;
+    touch-action: pan-y;
+    transform: translate3d(-400%, 0, 0);
+    user-select: none;
+  }
+
+  &__img-item {
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+    margin: 0% 1%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      pointer-events: none;
+    }
+  }
+
+  &__nav-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__nav-item {
+    width: 12px;
+    height: 12px;
+    border: 0;
+    margin-right: 7px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_active {
+      background-color: #dc433d;
+    }
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    position: absolute;
+    top: 40%;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+
+  &__btn-prev {
+    left: 0;
+
+    @include bg;
+
+    background-image: url('/src/img/left-arrow.png');
+
+    @media (max-width: 1200px) {
+      left: 10px;
+    }
+  }
+
+  &__btn-next {
+    right: 0;
+
+    @include bg;
+
+    background-image: url('/src/img/right-arrow.png');
+
+    @media (max-width: 1200px) {
+      right: 10px;
+    }
+  }
+}
