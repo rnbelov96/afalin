@@ -39,12 +39,29 @@
 }
 
 @font-face {
+  font-family: Gilroy;
+  font-style: italic;
+  font-weight: 600;
+  src:
+    url('../fonts/GILROY-SEMIBOLDITALIC.otf') format('opentype')
+}
+
+@font-face {
   font-family: Berlingske;
   font-style: normal;
   font-weight: 900;
   src:
     url('../fonts/BerlingskeSerif-Blk.woff2') format('woff2'),
     url('../fonts/BerlingskeSerif-Blk.woff') format('woff')
+}
+
+@font-face {
+  font-family: Berlingske;
+  font-style: italic;
+  font-weight: 900;
+  src:
+    url('../fonts/BerlingskeSerif-BlkItalic.woff2') format('woff2'),
+    url('../fonts/BerlingskeSerif-BlkItalic.woff') format('woff')
 }
 
 @font-face {

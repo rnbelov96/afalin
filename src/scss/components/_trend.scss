@@ -1,0 +1,97 @@
+.trend {
+  @media (max-width: 575px) {
+    padding-bottom: 30px;
+  }
+}
+
+.trend__title {
+  font-family: Berlingske;
+  @include max-width(542px);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 29px;
+  text-align: center;
+  overflow: hidden;
+
+  span {
+    color: $blue;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+}
+
+.trend__text {
+  @include max-width(542px);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  margin-bottom: 76px;
+
+  @media (max-width: 575px) {
+    margin-bottom: 35px;
+  }
+}
+
+.trend__list {
+  @include reset-list;
+  position: relative;
+  margin-bottom: 90px;
+  @include max-width(570px);
+  margin-left: auto;
+
+  &::before {
+    content: url('/src/img/trend-kid.png');
+    left: -970px;
+    top: -122px;
+    position: absolute;
+  }
+
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+  }
+}
+
+.trend__item {
+  padding-left: 36px;
+  margin-bottom: 35px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: url('/src/img/icons/trend-list.png');
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
+}
+
+.trend__note {
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 0;
+  @include max-width(570px);
+  margin-left: auto;
+  padding-left: 36px;
+
+  span {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 575px) {
+    padding-left: 0;
+  }
+
+  &::before {
+    content: url('/src/img/mask-and-circle.png');
+    position: absolute;
+    right: -390px;
+    top: -90px;
+  }
+}

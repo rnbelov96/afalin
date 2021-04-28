@@ -1,0 +1,24 @@
+.button {
+  background-image: linear-gradient(to top, #f2cf30 0%, #f1c82f 15%, #f6df54 80%, #f2eba3 100%);
+  min-height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 4px 0px 0px #b89820;
+  width: 100%;
+  border-radius: 40px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(to top, #f2cf30 0%, #f2cf30 100%);
+  }
+
+  &:active {
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+  }
+}

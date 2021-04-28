@@ -2,6 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 991px) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 60px);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color:white;
+  }
+}
+
+.header__logo {
+  @media (max-width: 575px) {
+    width: 130px;
+  }
 }
 
 .header__phone-box {
@@ -17,6 +34,10 @@
 
   &:focus, &:hover {
     color: black;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 16px;
   }
 }
 

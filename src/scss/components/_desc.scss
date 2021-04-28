@@ -3,6 +3,19 @@
   padding-top: 10px;
   @include bg;
   background-image: url('/src/img/bgs/desc-bg.png');
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    min-height: 1225px;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 0;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 80px;
+  }
 }
 
 .desc__title {
@@ -22,18 +35,50 @@
     font-weight: 900;
     font-style: normal;
   }
+
+  @media (max-width: 991px) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  
 }
 
 .desc__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.desc__left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-right: 20px;
 }
 
 .desc__text-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .desc__text {
@@ -45,4 +90,75 @@
   padding-bottom: 7px;
   padding-left: 15px;
   padding-right: 30px;
+
+  &:first-child {
+    @media (max-width: 991px) {
+      padding-bottom: 0;
+    }
+  }
+  
+  &:last-child {
+    @media (max-width: 991px) {
+      padding-top: 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    font-size: 19px;
+  }
+}
+
+.desc__list {
+  @include reset-list;
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.desc__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 58px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(1) {
+    &::before {
+      content: url('/src/img/icons/desc/1.png');
+      position: absolute;
+      top: 69%;
+      transform: translateY(-50%);
+      left: 2px;
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      content: url('/src/img/icons/desc/2.png');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      content: url('/src/img/icons/desc/3.png');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -4px;
+    }
+  }
+  &:nth-child(4) {
+    &::before {
+      content: url('/src/img/icons/desc/4.png');
+      position: absolute;
+      top: 66%;
+      transform: translateY(-50%);
+      left: 2px;
+    }
+  }
 }

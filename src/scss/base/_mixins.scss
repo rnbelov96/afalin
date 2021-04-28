@@ -11,6 +11,12 @@
   color: inherit;
 }
 
+@mixin reset-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
 @mixin max-width($width) {
   width: 100%;
   max-width: $width;
