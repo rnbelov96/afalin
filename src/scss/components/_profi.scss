@@ -7,6 +7,10 @@
   top: -33px;
   margin-bottom: -33px;
   overflow: hidden;
+
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+  }
 }
 
 .profi__title {
@@ -50,6 +54,10 @@
     top: 0px;
     left: -384px;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }
 
 .profi__item {
@@ -62,6 +70,20 @@
   padding-bottom: 40px;
   margin-right: 10px;
   margin-left: 10px;
+
+  @media (max-width: 767px) {
+    @include max-width(542px);
+  }
+
+  &:last-child {
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    min-height: 300px;
+  }
 }
 
 .profi__item-img {
@@ -79,6 +101,11 @@
   padding-right: 35px;
   text-align: center;
   margin-bottom: 0;
+
+  @media (max-width: 575px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .profi__note {
@@ -97,7 +124,7 @@
     position: absolute;
     content: url('/src/img/profi-arrow.png');
     bottom: -120px;
-    left: 100px;
+    left: 145px;
   }
 
   &::after {
@@ -105,5 +132,19 @@
     content: url('/src/img/book.png');
     top: 0;
     right: -768px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #989292;
+    border-radius: 10px;
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    font-size: 19px;
   }
 }

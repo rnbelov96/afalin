@@ -1,0 +1,131 @@
+.table {
+  padding-top: 100px;
+
+  @media (max-width: 1350px) {
+    padding-top: 40px;
+  }
+}
+
+.table__title {
+  position: relative;
+  font-family: 'Berlingske';
+  font-size: 36px;
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 60px;
+  @include max-width(695px);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  span {
+    color: $blue;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+    font-size: 29px;
+  }
+
+}
+
+.table__table {
+  position: relative;
+  border-radius: 10px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: url('/src/img/bgs/table/blue-circle.png');
+    top: -10px;
+    left: -438px;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: url('/src/img/bgs/table/pink-circle.png');
+    top: -460px;
+    right: -380px;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+}
+
+.table__row {
+  min-height: 70px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  display: flex;
+
+  &:nth-child(n) {
+    background-color: #e9e9e9;
+  }
+
+  &:nth-child(2n) {
+    background-color: #d9dada;
+  }
+
+  &_head {
+    background-color: #f6f6f7 !important;
+    font-weight: 600;
+
+    & .table__cell {
+      justify-content: center;
+      text-align: center;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.table__cell {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_caption {
+    justify-content: flex-start;
+    padding-left: 38px;
+
+    @media (max-width: 991px) {
+      font-size: 17px;
+    }
+
+    @media (max-width: 767px) {
+      width: 50%;
+    }
+
+    @media (max-width: 575px) {
+      width: 60%;
+      padding-left: 10px;
+      font-size: 13px;
+    }
+  }
+
+  img:first-child {
+    margin-right: 10px;
+
+    @media (max-width: 575px) {
+      margin-right: 5px;
+    }
+  }
+}
+
+.table__bg {
+  position: absolute;
+  @include central-align;
+  top: 44%;
+  z-index: -2;
+}

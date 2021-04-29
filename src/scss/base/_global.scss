@@ -7,6 +7,10 @@ body {
   line-height: normal;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .container {
   position: relative;
   z-index: 1;
