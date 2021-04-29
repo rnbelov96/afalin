@@ -1,0 +1,60 @@
+.location {
+  padding-top: 80px;
+}
+
+.location__top-block {
+  @include max-width(495px);
+}
+
+.location__title {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 900;
+  font-family: "Berlingske";
+
+  span {
+    text-transform: uppercase;
+    font-style: normal;
+    color: $blue;
+  }
+
+  &_top {
+    margin-bottom: 55px;
+  }
+}
+
+.location__text {
+  &_top {
+    margin-bottom: 60px;
+  }
+}
+
+.location__list {
+  @include reset-list;
+  margin-bottom: 60px;
+}
+
+.location__item {
+  position: relative;
+  padding-left: 86px;
+  margin-bottom: 40px;
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/icons/location-item-1.png');
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:last-child {
+    margin-bottom: 0;
+
+    &::before {
+      position: absolute;
+      content: url('/src/img/icons/location-item-2.png');
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
