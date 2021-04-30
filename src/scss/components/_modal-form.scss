@@ -9,6 +9,11 @@
   padding-right: 62px;
   padding-bottom: 30px;
 
+  &_feedback {
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+
   &_desc {
     &::after {
       position: absolute;

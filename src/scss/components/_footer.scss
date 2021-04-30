@@ -1,0 +1,91 @@
+.footer {
+  border-top: 2px #ffffff solid;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: white;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 991px) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+}
+
+.footer__company-name {
+  margin-bottom: 0;
+
+  @media (max-width: 991px) {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__links-box {
+  @media (max-width: 991px) {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__social {
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+  left: -20px;
+  &::after {
+    position: absolute;
+    top: 64%;
+    transform: translateY(-50%);
+    right: 7px;
+    content: url('/src/img/icons/socials.png');
+  }
+}
+
+.footer__policy {
+  @include reset-btn;
+  text-decoration: underline;
+  color: white;
+}
+
+.footer__phone-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (max-width: 991px) {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__phone {
+  color: white;
+  font-size: 24px;
+
+  &:focus, &:hover, &:active {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.footer__callback {
+  @include reset-btn;
+  color: white;
+  text-decoration: underline;
+  text-align: right;
+
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+}
