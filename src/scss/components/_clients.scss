@@ -1,0 +1,165 @@
+.clients {
+  min-height: 1876px;
+  @include bg;
+  background-image: url('/src/img/bgs/clients-bg.png');
+  padding-top: 392px;
+
+  @media (max-width: 991px) {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+    min-height: 1658px;
+  }
+
+  @media (max-width: 767px) {
+    background-color: #0055b0;
+    background-image: none;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    min-height: auto;
+    top: 0px;
+    margin-bottom: 0;
+  }
+}
+
+.clients__title {
+  font-family: 'Berlingske';
+  @include max-width(660px);
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 30px;
+  font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+
+  span {
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 27px;
+  }
+}
+
+.clients__text {
+  @include max-width(660px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 27px;
+  color: white;
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+}
+
+.clients__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 86px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 0;
+  }
+}
+
+.clients__item {
+  width: 46%;
+  max-width: 435px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 320px;
+  margin-bottom: 60px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.clients__item-img-box {
+  min-height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url('/src/img/gallery/clients/circle.png');
+    @include central-align;
+    z-index: -1;
+  }
+}
+
+.clients__img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clients__item-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.clients__note {
+  position: relative;
+  font-weight: 600;
+  color: white;
+  @include max-width(505px);
+
+  @media (max-width: 991px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/clients-arrow.png');
+    top: -63px;
+    left: 258px;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 997px;
+    height: 835px;
+    @include bg;
+    background-image: url('/src/img/clients-boy.png');
+    right: -1032px;
+    top: -210px;
+
+    @media (max-width: 1200px) {
+      width: 867px;
+      height: 725px;
+      right: -802px;
+      top: -157px;
+    }
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+}

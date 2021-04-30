@@ -22,6 +22,64 @@
     }
   }
 
+  &_line {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 100%;
+    position: relative;
+
+    @media (max-width: 767px) {
+      @include max-width(480px);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: url('/src/img/gallery/support/circle-purple.png');
+      bottom: -220px;
+      left: -387px;
+
+      @media (max-width: 1200px) {
+        content: none;
+      }
+    }
+
+    & .modal-form__title {
+      max-width: 100%;
+    }
+
+    & .modal-form__input-box {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+
+    & .modal-form__input-wrapper {
+      width: 33%;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    & .modal-form__policy-text {
+      @include max-width(595px);
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   @media (max-width: 575px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -106,6 +164,13 @@
     top: 17px;
     left: 0px;
   }
+
+  &_city::before {
+    content: url('/src/img/icons/form/city.png') !important;
+    position: absolute;
+    top: 17px;
+    left: 0px;
+  }
 }
 
 .modal-form__policy-text {
@@ -122,7 +187,7 @@
   }
 
   @media (max-width: 575px) {
-    font-size: 14px;;
+    font-size: 14px;
   }
 
   button {

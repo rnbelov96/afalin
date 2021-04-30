@@ -1,0 +1,124 @@
+.support {
+  padding-top: 125px;
+
+  @media (max-width: 1200px) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 60px;
+  }
+}
+
+.support__title {
+  font-family: 'Berlingske';
+  font-style: italic;
+  font-size: 36px;
+  @include max-width(625px);
+  margin-bottom: 70px;
+
+  span {
+    text-transform: uppercase;
+    color: $blue;
+    font-style: normal;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 31px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+  }
+}
+
+.support__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/gallery/support/dolphin.png');
+    bottom: -69px;
+    left: -356px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    z-index: -1;
+    position: absolute;
+    content: url('/src/img/gallery/support/circle.png');
+    bottom: 70px;
+    right: -383px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+}
+
+.support__item {
+  width: 47%;
+  max-width: 536px;
+  box-shadow: 0 21px 30px 2px rgba(0, 0, 1, 0.28);
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #f7f7f7 0%, #ececec 100%);
+  min-height: 495px;
+  padding-bottom: 30px;
+  margin-bottom: 65px;
+  margin-right: 80px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 1200px) {
+    margin-right: 40px;
+  }
+
+  @media (max-width: 991px) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-right: 0px;
+    min-height: auto;
+  }
+}
+
+.support__img {
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.support__item-title {
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+}
+
+.support__item-text {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-bottom: 0;
+  text-align: center;
+  @media (max-width: 575px) {
+    font-size: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
