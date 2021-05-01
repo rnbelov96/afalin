@@ -1,0 +1,35 @@
+.reviews {
+  padding-top: 150px;
+  margin-bottom: -63px;
+
+  @media (max-width: 991px) {
+    padding-top: 90px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 55px;
+  }
+}
+
+.reviews__title {
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Berlingske";
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 66px;
+
+  span {
+    color: $blue;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 28px;
+  }
+}

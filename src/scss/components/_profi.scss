@@ -11,6 +11,10 @@
   @media (max-width: 767px) {
     padding-bottom: 30px;
   }
+
+  @media (max-width: 575px) {
+    padding-top: 225px;
+  }
 }
 
 .profi__title {
@@ -27,6 +31,11 @@
     color: $yellow;
     font-style: normal;
     text-transform: uppercase;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 23px;
+    margin-bottom: 30px;
   }
 }
 
@@ -53,6 +62,10 @@
     content: url('/src/img/flamingo.png');
     top: 0px;
     left: -384px;
+
+    @media (max-width: 1200px) {
+      content: none;
+    }
   }
 
   @media (max-width: 767px) {
@@ -125,6 +138,9 @@
     content: url('/src/img/profi-arrow.png');
     bottom: -120px;
     left: 145px;
+    @media (max-width: 767px) {
+      content: none;
+    }
   }
 
   &::after {
@@ -132,6 +148,9 @@
     content: url('/src/img/book.png');
     top: 0;
     right: -768px;
+    @media (max-width: 767px) {
+      content: none;
+    }
   }
 
   @media (max-width: 767px) {

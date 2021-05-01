@@ -3,6 +3,10 @@
 @import './base/variables.scss';
 @import './base/mixins.scss';
 @import './base/global.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/button.scss';
+@import './components/priv-policy.scss';
 @import './components/modal.scss';
 
 .thanks,
@@ -12,7 +16,7 @@
   flex-direction: column;
 
   &__body {
-    background-color: white;
+    background-color: #0056ac;
   }
 
   &__body,
@@ -25,6 +29,7 @@
     flex: 0 0 auto;
     padding-top: 20px;
     padding-bottom: 30px;
+    background-color: white;
   }
 
   .container {
@@ -55,7 +60,7 @@
   }
 
   &__title {
-    color: black;
+    color: white;
     font-size: 28px;
     font-weight: 500;
     text-align: center;
@@ -68,7 +73,7 @@
   &__subtitle {
     margin-top: 40px;
     margin-bottom: 20px;
-    color: black;
+    color: white;
     font-size: 18px;
     text-align: center;
   }

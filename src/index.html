@@ -29,7 +29,9 @@
             <div class="header__phone-box">
               <a href="tel:+70000000000" class="header__phone"
                 >8 (000) 000-00-00 </a
-              ><button class="header__callback">заказать звонок</button>
+              ><button class="header__callback js-callback">
+                заказать звонок
+              </button>
             </div>
           </header>
 
@@ -57,7 +59,8 @@
             </div>
             <form class="modal-form modal-form_desc">
               <h3 class="modal-form__title">
-                Получить подробные материалы франшизы
+                Получить подробные <br />
+                материалы франшизы
               </h3>
               <div class="modal-form__input-box">
                 <div class="modal-form__input-wrapper">
@@ -94,7 +97,7 @@
               <p class="modal-form__policy-text">
                 Нажимая на кнопку «Получить материалы», я даю согласие на
                 обработку персональных данных и соглашаюсь с
-                <button class="modal-form__policy js-policy">
+                <button type="button" class="modal-form__policy js-policy">
                   политикой конфиденциальности
                 </button>
               </p>
@@ -451,7 +454,9 @@
             </h3>
             <div class="calc__calc">
               <input type="range" class="calc__input" />
-              <button class="button button_calc">Зафиксировать прибыль</button>
+              <button class="button button_calc js-plan">
+                Зафиксировать прибыль
+              </button>
             </div>
           </div>
           <div class="calc__end"></div>
@@ -644,7 +649,7 @@
                 class="modal-form__input-wrapper modal-form__input-wrapper_city"
               >
                 <input
-                  name="name"
+                  name="city"
                   placeholder="Ваш город"
                   data-type="city"
                   type="text"
@@ -676,7 +681,7 @@
             <p class="modal-form__policy-text">
               Нажимая на кнопку «Проверить свой город», я даю согласие на
               обработку персональных данных и соглашаюсь с
-              <button class="modal-form__policy js-policy">
+              <button type="button" class="modal-form__policy js-policy">
                 политикой конфиденциальности
               </button>
             </p>
@@ -729,7 +734,10 @@
 
       <section class="reviews">
         <div class="container">
-          <h2 class="reviews__title"></h2>
+          <h2 class="reviews__title">
+            <span>Клиенты ценят «Афалин»</span> <br />
+            за комфорт, безопасность и отличный сервис
+          </h2>
           <section class="slider">
             <div class="slider__wrapper">
               <div class="slider__img-box">
@@ -765,12 +773,140 @@
                     </p>
                   </div>
                 </div>
+                <div class="slider__img-item">
+                  <div class="slider__review">
+                    <img
+                      src="./img/avatar.png"
+                      alt="Аватар пользователя"
+                      class="slider__avatar"
+                    />
+                    <p class="slider__name">Татьяна Никитина</p>
+                    <p class="slider__text">
+                      Классное место, инструктор Олеся Грек просто волшебница,
+                      ребёнок достигает огромных результатов прямо на глазах!
+                      Если вы растите чемпиона то вам к Олесе.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__img-item">
+                  <div class="slider__review">
+                    <img
+                      src="./img/avatar.png"
+                      alt="Аватар пользователя"
+                      class="slider__avatar"
+                    />
+                    <p class="slider__name">Валерия Ласкова</p>
+                    <p class="slider__text">
+                      Замечательный оздоровительный комплекс! Чистейшие
+                      бассейны, профессиональные тренера,чуткий и индивидуальный
+                      подход к ребенку. Все продумано до мелочей для удобства
+                      детей и родителей. Хочется приходить снова и снова.
+                      Спасибо!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="slider__img-item">
+                  <div class="slider__review">
+                    <img
+                      src="./img/avatar.png"
+                      alt="Аватар пользователя"
+                      class="slider__avatar"
+                    />
+                    <p class="slider__name">Татьяна Никитина</p>
+                    <p class="slider__text">
+                      Классное место, инструктор Олеся Грек просто волшебница,
+                      ребёнок достигает огромных результатов прямо на глазах!
+                      Если вы растите чемпиона то вам к Олесе.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__img-item">
+                  <div class="slider__review">
+                    <img
+                      src="./img/avatar.png"
+                      alt="Аватар пользователя"
+                      class="slider__avatar"
+                    />
+                    <p class="slider__name">Валерия Ласкова</p>
+                    <p class="slider__text">
+                      Замечательный оздоровительный комплекс! Чистейшие
+                      бассейны, профессиональные тренера,чуткий и индивидуальный
+                      подход к ребенку. Все продумано до мелочей для удобства
+                      детей и родителей. Хочется приходить снова и снова.
+                      Спасибо!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="slider__img-item">
+                  <div class="slider__review">
+                    <img
+                      src="./img/avatar.png"
+                      alt="Аватар пользователя"
+                      class="slider__avatar"
+                    />
+                    <p class="slider__name">Татьяна Никитина</p>
+                    <p class="slider__text">
+                      Классное место, инструктор Олеся Грек просто волшебница,
+                      ребёнок достигает огромных результатов прямо на глазах!
+                      Если вы растите чемпиона то вам к Олесе.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__img-item">
+                  <div class="slider__review">
+                    <img
+                      src="./img/avatar.png"
+                      alt="Аватар пользователя"
+                      class="slider__avatar"
+                    />
+                    <p class="slider__name">Валерия Ласкова</p>
+                    <p class="slider__text">
+                      Замечательный оздоровительный комплекс! Чистейшие
+                      бассейны, профессиональные тренера,чуткий и индивидуальный
+                      подход к ребенку. Все продумано до мелочей для удобства
+                      детей и родителей. Хочется приходить снова и снова.
+                      Спасибо!
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__img-item">
+                  <div class="slider__review">
+                    <img
+                      src="./img/avatar.png"
+                      alt="Аватар пользователя"
+                      class="slider__avatar"
+                    />
+                    <p class="slider__name">Татьяна Никитина</p>
+                    <p class="slider__text">
+                      Классное место, инструктор Олеся Грек просто волшебница,
+                      ребёнок достигает огромных результатов прямо на глазах!
+                      Если вы растите чемпиона то вам к Олесе.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider__img-item">
+                  <div class="slider__review">
+                    <img
+                      src="./img/avatar.png"
+                      alt="Аватар пользователя"
+                      class="slider__avatar"
+                    />
+                    <p class="slider__name">Валерия Ласкова</p>
+                    <p class="slider__text">
+                      Замечательный оздоровительный комплекс! Чистейшие
+                      бассейны, профессиональные тренера,чуткий и индивидуальный
+                      подход к ребенку. Все продумано до мелочей для удобства
+                      детей и родителей. Хочется приходить снова и снова.
+                      Спасибо!
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="slider__btns">
-              <button class="slider__btn-prev" type="button"></button>
-              <button class="slider__btn-next" type="button"></button>
-            </div>
+            <button class="slider__btn-prev" type="button"></button>
+            <button class="slider__btn-next" type="button"></button>
           </section>
         </div>
       </section>
@@ -794,7 +930,7 @@
                 class="modal-form__input-wrapper modal-form__input-wrapper_city"
               >
                 <input
-                  name="name"
+                  name="city"
                   placeholder="Ваш город"
                   data-type="city"
                   type="text"
@@ -826,7 +962,7 @@
             <p class="modal-form__policy-text">
               Нажимая на кнопку «Получить условия на почту», я даю согласие на
               обработку персональных данных и соглашаюсь с
-              <button class="modal-form__policy js-policy">
+              <button type="button" class="modal-form__policy js-policy">
                 политикой конфиденциальности
               </button>
             </p>
@@ -838,7 +974,7 @@
             </p>
             <div class="footer__links-box">
               <p class="footer__social">Мы в социальных сетях</p>
-              <button class="footer__policy js-policy">
+              <button class="footer__policy js-policy" type="button">
                 Политика конфиденциальности
               </button>
             </div>
@@ -852,6 +988,61 @@
         </div>
       </section>
     </main>
+
+    <div class="modal">
+      <div class="modal__center-wrapper">
+        <form class="modal-form">
+          <h3 class="modal-form__title">
+            Получить подробные материалы франшизы
+          </h3>
+          <div class="modal-form__input-box">
+            <div class="modal-form__input-wrapper">
+              <input
+                name="name"
+                placeholder="Ваше имя"
+                data-type="name"
+                type="text"
+                class="modal-form__input"
+              />
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                name="phone"
+                placeholder="Ваш телефон"
+                data-type="phone"
+                type="text"
+                class="modal-form__input"
+              />
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                name="email"
+                placeholder="Ваш e-mail"
+                data-type="email"
+                type="email"
+                class="modal-form__input"
+              />
+            </div>
+          </div>
+          <button type="submit" class="button button_modal-form">
+            Получить материалы
+          </button>
+          <p class="modal-form__policy-text">
+            Нажимая на кнопку «<span>Получить материалы</span>», я даю согласие
+            на обработку персональных данных и соглашаюсь с
+            <button type="button" class="modal-form__policy js-policy">
+              политикой конфиденциальности
+            </button>
+          </p>
+          <button
+            data-modal-close=""
+            class="modal__close"
+            title="Закрыть"
+            type="button"
+          ></button>
+        </form>
+      </div>
+    </div>
 
     <div class="modal">
       <div class="priv-policy priv-policy_modal">

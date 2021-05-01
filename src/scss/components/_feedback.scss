@@ -39,6 +39,10 @@
     content: url('/src/img/notebook.png');
     right: -978px;
     top: -135px;
+
+    @media (max-width: 767px) {
+      content: none;
+    }
   }
 
   @media (max-width: 767px) {
